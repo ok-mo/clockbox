@@ -28,5 +28,5 @@ jobs:
           context: .
           push: true
           tags: user/app:latest
-          cache-from: type=registry,ref=user/app:latest
-          cache-to: type=inline
+          cache-from: type=registry,ref=user/app:buildcache
+          cache-to: type=registry,ref=user/app:buildcache,mode=max
