@@ -27,6 +27,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: user/app:latest
-          cache-from: type=registry,ref=user/app:buildcache
-          cache-to: type=registry,ref=user/app:buildcache,mode=max
+          tags: okmo/clockbox:latest
+          cache-from: type=registry,ref=okmo/clockbox:buildcache
+          cache-to: type=registry,ref=okmo/clockbox:buildcache,mode=max
